@@ -8,7 +8,7 @@
                 <h6 class="eltdf-comment-name vcard">
                     <?php echo wp_kses_post(get_comment_author_link()); ?>
                 </h6>
-                <?php get_comment_date()  ?>
+                <?= get_comment_date()  ?>
                 <div class="eltdf-review-rating">
                     <?php foreach ($rating_criteria as $rating) { ?>
                         <?php if (!isset($rating['show']) || (isset($rating['show']) && $rating['show'])) { ?>
